@@ -60,8 +60,18 @@
 
 	<h2>Formularios</h2>
 	<form action="http://www.CursodeHTML.com/newuser.php" method="get" autocomplete="off">
-		<input type="text" name="miFormulario" id="etiquetaText" value="Angel">
-		<input type="submit" value="Aceptar">
+		Email: <input type="email" name="mail" id="mail">
+		<input type="submit" value="Aceptar"><br><br>
+		Edad: <input type="number" name="edad" id="edad" min="18" max="100">
+		<input type="submit" value="Aceptar"><br><br>
+		Buscar: <input type="search" name="buscar" id="buscar"><br><br>
+		URL: <input type="url" name="URL" id="URL"><br><br>
+		Edad: <input type="number" name="edad" id="edad" min="0" max="100" step="5" placeholder="Introduce edad"><br><br>
+		Rango: <input type="range" min="0" max="100" step="5"><br><br>
+		Fecha: <input type="date" name="fecha" id="fecha"><br><br>
+		Hora: <input type="time" name="hora" id="hora" required><br><br>
+		Código postal: <input pattern="(0-9){5}" placeholder="5 dígitos"><br><br>
+		<input type="submit" value="Enviar"><br><br>
 	</form>
 </body>
 </html>
