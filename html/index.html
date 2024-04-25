@@ -72,6 +72,14 @@
 		Hora: <input type="time" name="hora" id="hora" required><br><br>
 		Código postal: <input pattern="(0-9){5}" placeholder="5 dígitos"><br><br>
 		<input type="submit" value="Enviar"><br><br>
+		<hr>
+		<datalist id="informacion">
+			<option value="952773366" label="Telefono 1"></option>
+			<option value="952734366" label="Telefono 2"></option>
+			<option value="952773236" label="Telefono 3"></option>
+		</datalist>
+		Telefono: <input type="tel" name="telefono" id="telefono" list="informacion">
 	</form>
+
 </body>
 </html>
